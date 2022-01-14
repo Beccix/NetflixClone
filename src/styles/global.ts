@@ -19,11 +19,14 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width: 720px) {
       font-size: 87.5%
     }
+    height: 100%;
+}
   }
 
   body {
-    background: black;
+    background: #823c85;
     -webkit-font-smoothing: antialiased;
+    height: 100%;
   }
 
   button {

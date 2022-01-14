@@ -1,63 +1,69 @@
 import styled from 'styled-components'
 
+export const Box = styled.div`
+  width: 100%;
+
+`
+
 export const Container = styled.header`
-  padding: 1rem 2rem 1rem 3.5rem;
-  background: black;
-  overflow: hidden;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  transition: background-color 350ms linear;
+  padding: 1rem 2.5rem 3rem 2.5rem;
+  width: 100%;
   position: fixed;
-  top: 0; 
-  width: 100%; 
-`;
 
-export const Content = styled.nav`
+  ${Box}:hover & {
+    background-color: black;
+    transition: background-color 150ms linear;
+  }
+`
 
-  position: relative;
+export const NavBar = styled.nav`
   display: flex;
   align-items: center;
-
-  div:first-of-type {
-    display: inline-block;
-    width: 70%;
-    
-    a {
-      margin-right: 2%;
-    }
-  }
-
-  div:last-of-type {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    a:not(:last-of-type), img {
-      
-    }
-  }
-  
-  a { 
-    font-size: clamp(16px, 1.9vw, 32px);
-    color: var(--font-color);
-    text-decoration: none;
   }
 
   .imgLogo {
-    width: 7rem;
-    margin-right: 1rem;
+    display: inline-block;
+    margin-right: 1.5rem;
   }
 
-  input { 
-    display: none;
+  .NavegationTab { 
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--font-color);
+    margin-right: 0.5rem;
   }
 
-  .avatar {
-    width: 1.8rem;
+  img {
+    width: auto;
+    height: 30px;
   }
-`;
+`
 
-export const Icons = styled.img`
-  width: 1.8rem;
-  filter: brightness(0) invert(1);
-`;
+export const BurguerMenu = styled.div`
+  width: 80%;
+  display: flex;
+  align-items: center;
+`
 
+export const RoutesNav = styled.div`
+  display: none;
 
+  li {
+    list-style-type: none;
+  }
+  ul > li > a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+`
 
+export const Accountbox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 18%;
+`

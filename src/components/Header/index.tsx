@@ -1,56 +1,67 @@
 import logoImg from '../../assets/logo.svg'
-import searchImg from '../../assets/search.png'
-import notificationImg from '../../assets/notification.png'
-import perfilImg from '../../assets/woman.png'
-import arrowImg from '../../assets/arrow.png'
-import { Container, Content, Icons } from './styles'
+import { Accountbox, Box, BurguerMenu, Container, NavBar, RoutesNav } from "./styles";
+import { FaBell, FaSearch } from 'react-icons/fa';
+import { BsFillCaretDownFill } from "react-icons/bs";
+import AvatarImg from "../../assets/woman.png"
+import { useState } from "react";
 
 export function Header() {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
+
   return (
-    <Container>
-      <Content>
-        <a href="#">
-          <img className="imgLogo" src={logoImg} alt="Netflix logo" />
-        </a>
-        <div>
+    <Box className={navbar ? 'active' : ''}>
+      <Container>
+        <NavBar>
+          {/* logo / nav */}
           <a href="#">
-            Início
+            <img className="imgLogo" src={logoImg} alt="Netflix logo" />
           </a>
-          <a href="#">
-            Séries
-          </a>
-          <a href="#">
-            Filmes
-          </a>
-          <a href="#">
-            Bombando
-          </a>
-          <a href="#">
-            Minha Lista
-          </a>
-        </div>
-        <div>
-          <input type="text" placeholder="Titulo, gente e genêro" />
-          <Icons src={searchImg} alt="lupa" />
-          <a href="#">
-            <span>Infantil</span>
-          </a>
-          <a href="#">
-            <Icons src={notificationImg} alt="notificação" />
-          </a>
-          <a href="#">
-            <img className="avatar" src={perfilImg} alt="Perfil" />
-          </a>
-          <a href="#">
-            <Icons src={arrowImg} alt="Seta" />
-          </a>
-        </div >
-      </Content >
-    </Container >
+          {/* burguer menu */}
+          <BurguerMenu>
+            <a className="NavegationTab" href="#">Navegar</a>
+            <BsFillCaretDownFill size={20} color="white" />
+          </BurguerMenu>
+          {/* first-nav */}
+          <RoutesNav>
+            <ul>
+              <li>
+                <a href="#">Início</a>
+              </li>
+              <li>
+                <a href="#">Séries</a>
+              </li>
+              <li>
+                <a href="#">Filmes</a>
+              </li>
+              <li>
+                <a href="#">Bombando</a>
+              </li>
+              <li>
+                <a href="#">Minha lista</a>
+              </li>
+            </ul>
+          </RoutesNav>
+          {/* secondary-nav */}
+          <Accountbox>
+            <FaSearch size={20} color="white" />
+            <FaBell size={20} color="white" />
+            <button type="button">
+              <img src={AvatarImg} alt="" />
+            </button>
+          </Accountbox>
+        </NavBar>
+      </Container>
+    </Box>
   )
 }
-
-
-
-
 
