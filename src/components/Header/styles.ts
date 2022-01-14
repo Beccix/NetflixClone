@@ -2,18 +2,18 @@ import styled from 'styled-components'
 
 export const Box = styled.div`
   width: 100%;
-
 `
 
 export const Container = styled.header`
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   transition: background-color 350ms linear;
-  padding: 1rem 2.5rem 3rem 2.5rem;
+  padding: 1rem 2.5rem 1.5rem 2.5rem;
   width: 100%;
   position: fixed;
+  z-index: 1;
 
-  ${Box}:hover & {
+  ${Box}.active & {
     background-color: black;
     transition: background-color 150ms linear;
   }
