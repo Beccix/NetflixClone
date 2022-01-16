@@ -11,7 +11,7 @@ export const Container = styled.header`
   padding: 1rem 2.5rem 1.5rem 2.5rem;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
 
   ${Box}.active & {
     background-color: black;

@@ -5,6 +5,9 @@ export const GlobalStyle = createGlobalStyle`
     --font-color: #F2F2F2;
   }
 
+  $itemGrow: 1.2;
+  $duration: 250ms;
+
   * {
     margin: 0;
     padding: 0;
@@ -12,6 +15,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
+    scroll-behavior: smooth;
+
     @media (max-width: 1080) {
       font-size: 93.75%;
     }

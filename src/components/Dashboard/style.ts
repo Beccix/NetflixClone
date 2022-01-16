@@ -34,7 +34,7 @@ export const ButtonContainer = styled.div`
   display: flex;
 
   div > button {
-    height: 3.3rem;
+    height: 3.1rem;
     font-size: 1.5rem;
     border-radius: .5rem;
     border: none;
