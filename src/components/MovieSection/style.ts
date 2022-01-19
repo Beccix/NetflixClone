@@ -1,49 +1,52 @@
 import styled from "styled-components";
 
 export const MovieWrapper = styled.div`
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
+      margin-left: 4%;
+      z-index: 10;
 
-      .swiper-slide {
-        height: 10.5rem;
-        text-align: center;
-        font-size: 1.2rem;
-        background: purple;
+  .swiper {
+  width: 100%;
+  height: 100%;
+  }
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-      .swiper-slide:hover {
-        height: 11.5rem;
-        transform: scale(1.2);
-        transition: transform 1s, height 1s;
-        z-index: 90;
-      }
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      } 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-      .swiper-button-next, .swiper-button-prev {
-        color: white;
-        transform: scale(1.2);
-        background-color: red;
-      }
+.swiper-button-next, .swiper-button-prev {
+  color: white; 
+  transform: scale(1.2);
+}
+
+.swiper-button-next {
+  transform: translateX(20%);
+}
+
+.swiper-button-prev {
+  transform: translateX(-100%);
+  z-index: 20;
+}
 `

@@ -29,7 +29,7 @@ export function Header() {
           {/* burguer menu */}
           <BurguerMenu>
             <a className="NavegationTab" href="#">Navegar</a>
-            <BsFillCaretDownFill size={20} color="white" />
+            <BsFillCaretDownFill size={35} color="white" />
           </BurguerMenu>
           {/* first-nav */}
           <RoutesNav>

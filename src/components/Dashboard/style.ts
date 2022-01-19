@@ -4,13 +4,13 @@ export const Container = styled.div`
 `
 
 export const DashboardBox = styled.div`
-  height: 26.5em;
-  background-color: blue;
+  height: 29em;
+  background-color: black;
 `
 export const DashboardInfo = styled.div`
     margin-left: 2.2rem;
     width: 41.6%;
-    height: 82%;
+    height: 72%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

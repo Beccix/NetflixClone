@@ -12,19 +12,38 @@ export function MovieCarousel() {
   return (
     <MovieWrapper>
       <Swiper
-        spaceBetween={2}
-        slidesPerView={3}
+        spaceBetween={4}
+        slidesPerView={2}
         slidesPerGroup={2}
+        loopFillGroupWithBlank={true}
+        loop={true}
         navigation
       >
-        <SwiperSlide>Movie 1</SwiperSlide>
-        <SwiperSlide>Movie 2</SwiperSlide>
-        <SwiperSlide>Movie 3</SwiperSlide>
-        <SwiperSlide>Movie 4</SwiperSlide>
-        <SwiperSlide>Movie 5</SwiperSlide>
-        <SwiperSlide>Movie 6</SwiperSlide>
-        <SwiperSlide>Movie 7</SwiperSlide>
-        <SwiperSlide>Movie 8</SwiperSlide>
+        <SwiperSlide>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk4cVpVF8pwRJoi1wJe04MH-c0baDu5f_ZfB-HT8EZF_2V_Ce7KXm5tx-V1Uy0kmaIKw&usqp=CAU" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk4cVpVF8pwRJoi1wJe04MH-c0baDu5f_ZfB-HT8EZF_2V_Ce7KXm5tx-V1Uy0kmaIKw&usqp=CAU" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk4cVpVF8pwRJoi1wJe04MH-c0baDu5f_ZfB-HT8EZF_2V_Ce7KXm5tx-V1Uy0kmaIKw&usqp=CAU" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk4cVpVF8pwRJoi1wJe04MH-c0baDu5f_ZfB-HT8EZF_2V_Ce7KXm5tx-V1Uy0kmaIKw&usqp=CAU" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk4cVpVF8pwRJoi1wJe04MH-c0baDu5f_ZfB-HT8EZF_2V_Ce7KXm5tx-V1Uy0kmaIKw&usqp=CAU" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk4cVpVF8pwRJoi1wJe04MH-c0baDu5f_ZfB-HT8EZF_2V_Ce7KXm5tx-V1Uy0kmaIKw&usqp=CAU" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk4cVpVF8pwRJoi1wJe04MH-c0baDu5f_ZfB-HT8EZF_2V_Ce7KXm5tx-V1Uy0kmaIKw&usqp=CAU" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNk4cVpVF8pwRJoi1wJe04MH-c0baDu5f_ZfB-HT8EZF_2V_Ce7KXm5tx-V1Uy0kmaIKw&usqp=CAU" alt="" />
+        </SwiperSlide>
+
       </Swiper>
     </MovieWrapper >
   )

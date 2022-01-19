@@ -8,8 +8,10 @@ export const Container = styled.header`
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
   transition: background-color 350ms linear;
-  padding: 1rem 2.5rem 1.5rem 2.5rem;
+  padding-right: 2.5rem;
+  padding-left: 3rem;
   width: 100%;
+  height: 8rem;
   position: fixed;
   z-index: 10;
 
@@ -22,15 +24,18 @@ export const Container = styled.header`
 export const NavBar = styled.nav`
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100%;
   }
 
   .imgLogo {
+    width: 8rem;
     display: inline-block;
-    margin-right: 1.5rem;
+    margin-right: 5rem;
   }
 
   .NavegationTab { 
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--font-color);
